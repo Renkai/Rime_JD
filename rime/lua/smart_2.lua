@@ -1,14 +1,9 @@
-local SEMICOLON = "semicolon"
 local KEY = "apostrophe"
 
 local function processor(key_event, env)
     local engine = env.engine
     local schema = engine.schema
     local context = engine.context
-
-    if key_event:release() or key_event:repr() ~= SEMICOLON then
-        return 1
-    end
 
     if key_event:release() or key_event:repr() ~= KEY then
         return 2
