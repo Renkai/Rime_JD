@@ -193,6 +193,7 @@ key_binder:
     - {accept: equal, send: Page_Down, when: has_menu}
     - { when: always, accept: F6, select: .next }
     - { when: always, accept: F7, toggle: jffh }
+    - { when: has_menu, accept: ";", send: 1 }
     - { when: has_menu, accept: "'", send: 2 }
     - { when: has_menu, accept: "&", toggle: emoji_cn}
     - { when: has_menu, accept: "^", toggle: bmms}
